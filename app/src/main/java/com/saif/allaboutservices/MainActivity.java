@@ -24,4 +24,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(MainActivity.this,MyService.class);
         stopService(intent);
     }
+
+    // Start the Intent Service
+    public void startIntentService(View view) {
+        Intent intent=new Intent(MainActivity.this,MyIntentService.class);
+        startService(intent);
+    }
 }
