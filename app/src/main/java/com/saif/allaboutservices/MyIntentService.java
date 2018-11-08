@@ -28,6 +28,10 @@ public class MyIntentService extends IntentService {
             e.printStackTrace();
         }
 
+        Intent bcrIntent = new Intent("action.service.to.activity");
+        bcrIntent.putExtra("startServiceResult", "Intent Service Executed");
+        sendBroadcast(bcrIntent);
+
     }
 
     @Override
